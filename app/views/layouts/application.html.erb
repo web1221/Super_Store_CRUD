@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mario Super Store</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+
+<body>
+  <%= flash[:alert] %>
+  <%= flash[:notice] %>
+  <h1>Mario's Super Store</h1>
+  <p> <%= link_to "Home page", root_path %> </p>
+  <%= yield %>
+</body>
+</html>

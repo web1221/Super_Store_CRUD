@@ -8,7 +8,7 @@
   <% end %>
 </ul>
 <% else %>
-<p>There are no products made in the United States yet.</p>
+<p>There are no products with the most reviews.</p>
 <% end %>
 <h4>Here are products most recently added:</h4>
 <% if @products.any? %>
@@ -18,7 +18,7 @@
   <% end %>
 </ul>
 <% else %>
-<p>There are no products made in the United States yet.</p>
+<p>There are no recent products.</p>
 <% end %>
 <h4>Here are products made in the United States:</h4>
 <% if @products.any? %>
