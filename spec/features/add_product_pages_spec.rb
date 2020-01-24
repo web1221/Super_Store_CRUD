@@ -37,5 +37,17 @@ describe('create an product path', {:type => :feature})  do
     expect(page).to have_content 'Candle'
 
   end
+  it "deletes a product" do
+    visit('/products')
+    click_link 'Create new product'
+    fill_in 'Name', :with => 'Chair'
+    fill_in 'Cost', :with => '12'
+    fill_in 'Country of origin', :with => 'United States'
+    click_on 'Create Product'
+    click_on 'Chair'
+    click_on 'Delete'
+    expect(page).to have_content ''
+
+  end
 
 end
