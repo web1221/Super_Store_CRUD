@@ -21,6 +21,14 @@
     <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
   </div>
 
+  <div class="field">
+      <h3>Make admin?</h3>
+      <%= f.label "yes" %>
+      <%= f.radio_button :admin, true %>
+      <%= f.label "no" %>
+      <%= f.radio_button :admin, false, :checked => true %>
+  </div>
+  
   <div class="actions">
     <%= f.submit "Sign up" %>
   </div>
