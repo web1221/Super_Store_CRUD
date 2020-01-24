@@ -1,0 +1,34 @@
+<h2>Welcome!</h2>
+<h3>Mario's Super Store is a one stop shop til you drop. You can find all your needs here... From Organic Candles to Jazz posters to the occasional Monster! Never shop anywhere else again!</h3>
+<h4>Here is our most reviewed product:</h4>
+<% if @products.any? %>
+<ul>
+  <% @products.most_reviewed.each do |p| %>
+  <li><%= link_to p.name, product_path(p) %></li>
+  <% end %>
+</ul>
+<% else %>
+<p>There are no products made in the United States yet.</p>
+<% end %>
+<h4>Here are products most recently added:</h4>
+<% if @products.any? %>
+<ul>
+  <% @products.three_most_recent.each do |p| %>
+  <li><%= link_to p.name, product_path(p) %></li>
+  <% end %>
+</ul>
+<% else %>
+<p>There are no products made in the United States yet.</p>
+<% end %>
+<h4>Here are products made in the United States:</h4>
+<% if @products.any? %>
+<ul>
+  <% @products.usa_product.each do |p| %>
+  <li><%= link_to p.name, product_path(p) %></li>
+  <% end %>
+</ul>
+<% else %>
+<p>There are no products made in the United States yet.</p>
+<% end %>
+
+<p><%= link_to "Products", products_path %></p>
