@@ -544,8 +544,8 @@
         1,
         null,
         1,
-        0,
-        0,
+        1,
+        1,
         null,
         null,
         null
@@ -733,6 +733,16 @@
         1,
         null
       ],
+      "/Users/Webs/Desktop/mario_super_store/spec/models/product_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        2,
+        2,
+        2,
+        null
+      ],
       "/Users/Webs/Desktop/mario_super_store/spec/models/review_spec.rb": [
         1,
         null,
@@ -754,6 +764,6 @@
         null
       ]
     },
-    "timestamp": 1579904432
+    "timestamp": 1579907096
   }
 }
