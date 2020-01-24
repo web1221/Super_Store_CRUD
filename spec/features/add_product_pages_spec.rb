@@ -47,7 +47,6 @@ describe('create an product path', {:type => :feature})  do
     click_on 'Chair'
     click_on 'Delete'
     expect(page).to have_content ''
-
   end
 
 end
