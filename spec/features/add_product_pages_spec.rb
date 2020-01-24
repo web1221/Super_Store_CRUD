@@ -20,5 +20,22 @@ describe('create an product path', {:type => :feature})  do
     expect(page).to have_content 'Product successfully added!'
     expect(page).to have_content 'Chair'
   end
+  it "edits a product" do
+    visit('/products')
+    click_link 'Create new product'
+    fill_in 'Name', :with => 'Chair'
+    fill_in 'Cost', :with => '12'
+    fill_in 'Country of origin', :with => 'United States'
+    click_on 'Create Product'
+    click_on 'Chair'
+    click_on 'Edit'
+    fill_in 'Name', :with => 'Candle'
+    fill_in 'Cost', :with => '15'
+    fill_in 'Country of origin', :with => 'Mexico'
+    click_on 'Update Product'
+    expect(page).to have_content 'Product successfully updated!'
+    expect(page).to have_content 'Candle'
+
+  end
 
 end
