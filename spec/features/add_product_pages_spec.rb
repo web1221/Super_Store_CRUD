@@ -8,11 +8,10 @@ describe('create an product path', {:type => :feature})  do
     fill_in 'Password', :with => 'cats123'
     fill_in 'Password confirmation', :with => 'cats123'
     choose 'user_admin_true'
-    click_on 'Sign Up'
+    click_on 'Sign up'
   end
   it "adds a new product" do
-    visit products_path
-    save_and_open_page
+    visit('/products')
     click_link 'Create new product'
     fill_in 'Name', :with => 'Chair'
     fill_in 'Cost', :with => '12'
