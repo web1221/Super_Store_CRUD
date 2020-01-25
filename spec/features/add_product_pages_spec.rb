@@ -48,5 +48,20 @@ describe('create an product path', {:type => :feature})  do
     click_on 'Delete'
     expect(page).to have_content ''
   end
+  it "lets a user add a review" do
+    visit('/products')
+    click_link 'Create new product'
+    fill_in 'Name', :with => 'Chair'
+    fill_in 'Cost', :with => '12'
+    fill_in 'Country of origin', :with => 'United States'
+    click_on 'Create Product'
+    click_on 'Chair'
+    click_on 'Add a review'
+    fill_in 'Author', :with => 'Angela'
+    fill_in 'Content body', :with => 'hey there this is a thing that hopefully has 50 characters'
+    fill_in 'Rating', :with => '3'
+    click_on 'Create Review'
+    expect(page).to have_content 'Angela'
+  end
 
 end
