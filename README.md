@@ -1,24 +1,36 @@
-# README
+# _Mario's Super Store_
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### **Mario's Super Store is an independent project for Epicodus, 01/17/20**
 
-Things you may want to cover:
+#### By _**Angela Weber**_
 
-* Ruby version
+## Description
+  _This application was created to demonstrate concepts of setting up a project using Rails. The application allows the user to submit a Product that one can then add reviews to. The user can then see all reviews attached to a product. The application has full CRUD functionality, you can create, read, update, and delete both products and their reviews._
 
-* System dependencies
+## Setup/Installation Requirements
 
-* Configuration
+* Copy link from github
+* Open terminal and __git clone__ link
+* __cd__ into project and if you have bundler installed you can run __bundle install__ to install gems
 
-* Database creation
 
-* Database initialization
+## Known Bugs
 
-* How to run the test suite
+_There are no known bugs. If you come across one please contact me._
 
-* Services (job queues, cache servers, search engines, etc.)
+## Support and contact details
 
-* Deployment instructions
+_For question you can email me at AngelaWeber95@hotmail.com_
 
-* ...
+## Technologies Used
+
+_This application was built using __Ruby__._
+* __Ruby and Rails__ was used for routing
+* __RSPEC__ was used for testing
+* __Pry__ was used for debugging
+* __Postgres__ was used for the database
+* __Rake__ was used for task management
+
+### License
+
+Copyright (c) 2019 **_Angela Weber_**
