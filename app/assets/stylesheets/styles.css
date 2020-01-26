@@ -1,3 +1,20 @@
 body {
-  background-color: grey;
+}
+
+.main-nav {
+  display: flex;
+
+}
+
+#sign-out {
+  margin-left: auto;
+}
+
+#sign-in {
+  margin-left: auto;
+}
+
+#sign-up {
+  margin-left: 950px;
+  /* margin-right: 5px; */
 }
