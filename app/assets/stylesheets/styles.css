@@ -1,4 +1,5 @@
 body {
+  background-color: #8CBCB9;
 }
 
 .main-nav {
@@ -15,6 +16,23 @@ body {
 }
 
 #sign-up {
-  margin-left: 950px;
+  margin-left: 900px;
   /* margin-right: 5px; */
+}
+
+#user-email {
+  margin-left: 850px;
+}
+
+#products {
+  margin-left: 10px;
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: #6E8387;
+}
+
+.underline {
+  text-decoration: underline;
 }

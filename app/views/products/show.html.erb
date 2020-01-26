@@ -1,9 +1,9 @@
-<h1><%= @product.name %></h1>
-<h2><%= @product.country_of_origin %></h2>
-<h3>$<%= @product.cost %></h3>
+<h1><span class="underline">Product:</span> <%= @product.name %></h1>
+<h2><span class="underline">Made in:</span> <%= @product.country_of_origin %></h2>
+<h3><span class="underline">Price:</span> $<%= @product.cost %></h3>
 
 <% if @product.reviews.any? %>
-<h4>Here are the reviews for this product:</h4>
+<h4 class="underline">Here are the reviews for this product:</h4>
 
 <% @product.reviews.each do |review| %>
 <ul>
