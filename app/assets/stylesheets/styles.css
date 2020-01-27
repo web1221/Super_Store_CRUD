@@ -64,4 +64,8 @@ li a{
 }
 .product-border{
   border: 1px white solid;
+  column-count: 2;
+  padding: 15px;
+
+
 }
