@@ -23,10 +23,10 @@
 
   <div class="field">
       <h3>Make admin?</h3>
-      <p><%= f.label "yes" %></p>
-      <p><%= f.radio_button :admin, true %></p>
-      <p><%= f.label "no" %></p>
-      <p><%= f.radio_button :admin, false, :checked => true %></p>
+      <%= f.label "yes" %>
+      <%= f.radio_button :admin, true %>
+      <%= f.label "no" %>
+      <%= f.radio_button :admin, false, :checked => true %>
   </div>
 
   <div class="actions">

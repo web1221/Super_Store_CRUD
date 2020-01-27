@@ -1,5 +1,6 @@
 body {
-  background-color: #8CBCB9;
+  background-color: #0D1321;
+  color: white;
 }
 
 .main-nav {
@@ -30,9 +31,37 @@ body {
 
 .jumbotron {
   text-align: center;
-  background-color: #6E8387;
+  background-color: #1D2D44;
+  color: white;
 }
 
 .underline {
   text-decoration: underline;
+  color: white;
+}
+
+li a{
+  color: white;
+}
+
+.actions{
+  color: black;
+}
+.index-welcome{
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: #657153;
+}
+
+.col-border {
+  border: 2px black solid;
+  background-color: #748CAB;
+}
+
+.heading-border {
+  border-bottom: 1px white solid;
+  text-align: center;
+}
+.product-border{
+  border: 1px white solid;
 }
