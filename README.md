@@ -5,13 +5,17 @@
 #### By _**Angela Weber**_
 
 ## Description
-  _This application was created to demonstrate concepts of setting up a project using Rails. The application allows the user to submit a Product that one can then add reviews to. The user can then see all reviews attached to a product. The application has full CRUD functionality, you can create, read, update, and delete both products and their reviews._
+  _This application was created to demonstrate concepts of setting up a project using Rails and using Devise for authentication. The application allows the an admin account to create, edit, and delete product. Users can add reviews to product, but can NOT create, edit or delete products._
 
 ## Setup/Installation Requirements
 
 * Copy link from github
 * Open terminal and __git clone__ link
 * __cd__ into project and if you have bundler installed you can run __bundle install__ to install gems
+* Run __rake db:create__
+* Run __rake db:migrate__
+* Run __rake db:test:prepare__ for test datebase
+
 
 
 ## Known Bugs
@@ -30,6 +34,7 @@ _This application was built using __Ruby__._
 * __Pry__ was used for debugging
 * __Postgres__ was used for the database
 * __Rake__ was used for task management
+* __Devise__ was used for authentication
 
 ### License
 
