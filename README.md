@@ -12,9 +12,8 @@
 * Copy link from github
 * Open terminal and __git clone__ link
 * __cd__ into project and if you have bundler installed you can run __bundle install__ to install gems
-* Run __rake db:create__
-* Run __rake db:migrate__
-* Run __rake db:test:prepare__ for test datebase
+* Run __rails s__ to view webpage
+
 
 
 
